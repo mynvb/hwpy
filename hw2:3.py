@@ -92,4 +92,23 @@ def first_n(n):
 print(first_n(6))
 
 
-        
+#6
+data = ['2018-01-01', 'yandex', 'cpc', 100]
+def list_to_nested_dict(a):
+    '''
+    Функция создает список из нескольких словарей
+    и последовательно присваивает значения каждому из словарей списка
+    '''
+    index = list(range(len(a)-1))
+    for i in index:
+        index[i] = dict()
+
+    index[len(index)-1][a[len(a)-2]] = a[len(a)-1]
+
+    for i in list(range(len(index)))[::-1]:
+        if i == 0: break
+        index[i-1][a[i-1]] = index[i]
+
+    return index[0]
+
+print(list_to_nested_dict(data))
