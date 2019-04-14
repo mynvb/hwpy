@@ -76,14 +76,4 @@ print(linalg.solve(a,b))
 np.allclose(np.dot(a, linalg.solve(a, b)), b)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

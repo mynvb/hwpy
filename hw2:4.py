@@ -1,6 +1,6 @@
 from datetime import datetime
 # 1, 2
-'''
+
 
 start_date = '07.08.2018'
 end_date = '10.08.2018'
@@ -80,7 +80,7 @@ def find_day():
         last_day = last_day - timedelta(days=1)
         return last_day.strftime('%Y-%m-%d')
 find_day()
-'''
+
 #6
 
 start = '2018-12-07'
